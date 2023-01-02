@@ -12,8 +12,6 @@ public class PlayerMovement : MonoBehaviour
     bool jump = false;      
     bool crouch = false;
 
-
-    // Update is called once per frame
     void Update()
     {
         
