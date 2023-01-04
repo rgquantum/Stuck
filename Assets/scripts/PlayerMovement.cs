@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -49,4 +50,36 @@ public class PlayerMovement : MonoBehaviour
     {
          animator.SetBool("IsCrouching", isCrouching);
     }
+
+    	private void OnTriggerEnter2D(Collider2D collision) 
+	{
+		if(collision.gameObject.tag == "Spike")
+        {
+            Dead();
+			Debug.Log("hit!");
+        }
+
+		if(collision.gameObject.name == "JumpDown")
+        {
+
+        }
+	}
+
+    	public void Dead()
+	{
+		animator.SetBool("IsDead", true);
+        deadCountdown();
+	}
+
+    void deadCountdown()
+    {
+        StartCoroutine(deadScene());
+    }
+
+    IEnumerator deadScene()
+    {
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(0);
+    }
+
 }
