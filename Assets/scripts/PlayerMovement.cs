@@ -13,6 +13,15 @@ public class PlayerMovement : MonoBehaviour
     bool jump = false;      
     bool crouch = false;
 
+    
+    
+    private int victoryNext;
+
+    void Start() 
+    {
+    victoryNext = SceneManager.GetActiveScene().buildIndex + 1 ;    
+    }
+
     void Update()
     {
         
@@ -61,25 +70,44 @@ public class PlayerMovement : MonoBehaviour
 
 		if(collision.gameObject.name == "JumpDown")
         {
+           
+        }
 
+        if(collision.gameObject.name == "EndCollision")
+        {
+            victoryCountdown();
         }
 	}
 
-    	public void Dead()
+    public void Dead()
 	{
 		animator.SetBool("IsDead", true);
         deadCountdown();
 	}
+
 
     void deadCountdown()
     {
         StartCoroutine(deadScene());
     }
 
+    void victoryCountdown()
+    {
+        StartCoroutine(victoryScreen());
+    }
+
+
+
     IEnumerator deadScene()
     {
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(0);
+    }
+
+    IEnumerator victoryScreen()
+    {
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(victoryNext);
     }
 
 }
