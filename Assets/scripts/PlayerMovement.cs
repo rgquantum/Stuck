@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
          animator.SetBool("IsCrouching", isCrouching);
     }
 
-    	private void OnTriggerEnter2D(Collider2D collision) 
+    	private void OnTriggerEnter2D(Collider2D collision)  
 	{
 		if(collision.gameObject.tag == "Spike")
         {
@@ -78,6 +78,14 @@ public class PlayerMovement : MonoBehaviour
             victoryCountdown();
         }
 	}
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        if(other.gameObject.tag == "Spike")
+        {
+            Dead();
+            Debug.Log("hit!");
+        }
+    }
 
     public void Dead()
 	{
