@@ -91,6 +91,11 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("hit!");
         }
 
+        if(other.gameObject.tag == "Map")
+        {
+            Destroy(other.gameObject);
+        }
+
        
     }
 
