@@ -77,12 +77,7 @@ public class PlayerMovement : MonoBehaviour
         {
             victoryCountdown();
         }
-
- 
-         
 	}
-
-
 
     private void OnCollisionEnter2D(Collision2D other) {
         if(other.gameObject.tag == "Spike")
@@ -90,8 +85,6 @@ public class PlayerMovement : MonoBehaviour
             Dead();
             Debug.Log("hit!");
         }
-
-       
     }
 
     public void Dead()

@@ -7,8 +7,6 @@ TagManager:
   - Spike
   - stopping
   - downing
-  - Platform
-  - Map
   layers:
   - Default
   - TransparentFX

@@ -7,38 +7,49 @@ public class movingplatform : MonoBehaviour
     // Start is called before the first frame update
 
 
-    public float PlatSpeed;
-    public int startingPoint;
-    public Transform[] points;
-
-    private int i;
+    public bool up;
+    
 
     void Start()
     {
-        transform.position = points[startingPoint].position;
+        up=true;
     }
 
+    // Update is called once per frame
     void Update()
     {
-        if (Vector2.Distance(transform.position, points[i].position) < 0.02f)
+        if(up == true)
         {
-            i++;
-            if (i == points.Length)
-            {
-                i = 0;
-            }
+            this.gameObject.transform.Translate(new Vector3(0, 5 * Time.deltaTime, 0));
         }
-        transform.position = Vector2.MoveTowards(transform.position, points[i]. position, PlatSpeed * Time.deltaTime);
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision) {
-       
-        collision.transform.SetParent(transform);
         
+        if(up == false)
+        {
+            this.gameObject.transform.Translate(new Vector3(0, -5 * Time.deltaTime, 0));
+        }
     }
 
-    private void OnCollisionExit2D(Collision2D collision) {
-        collision.transform.SetParent(null);
+    private void FixedUpdate() {
+       
+    }
+
+
+
+    private void OnCollisionExit2D(Collision2D other) {
+        if (other.gameObject.tag == "Stopping")
+        {
+            up = true;
+            Debug.Log("up");
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        if (other.gameObject.tag == "downing")
+        {
+            up = false;
+            Debug.Log("Down");
+        }
+    
     }
 
     
