@@ -11,7 +11,7 @@ public class GAMEOVER : MonoBehaviour
 
     void Start()
     {
-        lastScene = SceneManager.GetActiveScene().buildIndex + 1;
+        lastScene = SceneManager.GetActiveScene().buildIndex - 1;
     }
 
     // Update is called once per frame
