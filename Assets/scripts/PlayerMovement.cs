@@ -116,7 +116,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(collision.gameObject.name == "Final")
         {
-            victoryCountdown();
+            SceneManager.LoadScene(14);
         }
 
         if(collision.gameObject.name == "endRural")
@@ -130,6 +130,11 @@ public class PlayerMovement : MonoBehaviour
         }
          
         if(collision.gameObject.name == "endUrban")
+        {
+            victoryCountdown();
+        }
+
+        if(collision.gameObject.name == "sewerEnd")
         {
             victoryCountdown();
         }

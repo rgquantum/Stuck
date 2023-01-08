@@ -274,7 +274,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sewer - 2
+  m_Text: 'Sewer
+
+'
 --- !u!222 &434080720
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -581,7 +583,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: House
+  m_Text: 'Main Menu
+
+'
 --- !u!222 &906770530
 CanvasRenderer:
   m_ObjectHideFlags: 0
