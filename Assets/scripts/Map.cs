@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class Map : MonoBehaviour
 {
-    public int mapValue = 1;
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
 
-    private void OnTriggerEnter2D(Collider2D other) {
-        if(other.gameObject.tag == "Player")
-        {
-            MapManager.instance.ChangeScore(mapValue);
-        }
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }

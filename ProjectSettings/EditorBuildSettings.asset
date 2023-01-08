@@ -9,12 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/GAME OVER.unity
     guid: 51387c15cc9bf8740ac5183e586bfb5e
   - enabled: 1
-    path: Assets/Scenes/VICTORY SCREEN.unity
-    guid: 8faa5959be0341d4d979265f66b528db
-  - enabled: 1
     path: Assets/Scenes/SCHOOL LVL1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/SCHOOL LVL2.unity
-    guid: 267c6948438b32848ab33bacf5bbbc63
+    path: Assets/Scenes/lvl 1 done.unity
+    guid: 0e805134d7cf631488eed1035dd298b8
   m_configObjects: {}
