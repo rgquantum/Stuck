@@ -59,4 +59,9 @@ public class levelChoice : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+    public void credit()
+    {
+        SceneManager.LoadScene(15);
+    }
 }

@@ -51,6 +51,9 @@ EditorBuildSettings:
     path: Assets/FINAL.unity
     guid: 662b574337e654b4fba2071e0791f57e
   - enabled: 1
+    path: Assets/CREDITS.unity
+    guid: 22c39ba66aec4e44bb8783af663005fa
+  - enabled: 1
     path: Assets/Scenes/GAME OVER 1.unity
     guid: 00d6f17c30b7dc54f9f59013a24d818d
   - enabled: 1
