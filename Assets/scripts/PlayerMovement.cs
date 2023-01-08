@@ -68,6 +68,42 @@ public class PlayerMovement : MonoBehaviour
 			Debug.Log("hit!");
         }
 
+        if(collision.gameObject.tag == "Spike1")
+        {
+            Dead();
+			Debug.Log("hit!");
+        }
+
+        if(collision.gameObject.tag == "Spike2")
+        {
+            Dead();
+			Debug.Log("hit!");
+        }
+
+        if(collision.gameObject.tag == "Spike3")
+        {
+            Dead();
+			Debug.Log("hit!");
+        }
+
+        if(collision.gameObject.tag == "Spike4")
+        {
+            Dead();
+			Debug.Log("hit!");
+        }
+
+        if(collision.gameObject.tag == "Spike5")
+        {
+            Dead();
+			Debug.Log("hit!");
+        }
+
+        if(collision.gameObject.tag == "Spike6")
+        {
+            Dead();
+			Debug.Log("hit!");
+        }
+
 		if(collision.gameObject.name == "JumpDown")
         {
            
@@ -78,8 +114,25 @@ public class PlayerMovement : MonoBehaviour
             victoryCountdown();
         }
 
- 
+        if(collision.gameObject.name == "Final")
+        {
+            victoryCountdown();
+        }
+
+        if(collision.gameObject.name == "endRural")
+        {
+            victoryCountdown();
+        }
+
+        if(collision.gameObject.tag == "Map")
+        {
+            Destroy(collision.gameObject);   
+        }
          
+        if(collision.gameObject.name == "endUrban")
+        {
+            victoryCountdown();
+        }
 	}
 
 
@@ -124,5 +177,7 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(victoryNext);
     }
+
+    
 
 }

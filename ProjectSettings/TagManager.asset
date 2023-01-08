@@ -9,6 +9,11 @@ TagManager:
   - downing
   - Platform
   - Map
+  - Spike2
+  - Spike3
+  - Spike4
+  - Spike5
+  - Spike6
   layers:
   - Default
   - TransparentFX

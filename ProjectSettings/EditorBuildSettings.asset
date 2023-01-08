@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/LEVEL CHOICE.unity
     guid: 560aea12a02686d428881fc0589344b4
   - enabled: 1
+    path: Assets/START.unity
+    guid: e2a81f6a1fe66634393e4b396dd28eca
+  - enabled: 1
     path: Assets/Scenes/SCHOOL LVL1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -30,9 +33,51 @@ EditorBuildSettings:
     path: Assets/Scenes/VICTORY SCREEN 3.unity
     guid: 7cb309af8647f6e4ba1e6f3b343f1af4
   - enabled: 1
-    path: Assets/Scenes/GAME OVER.unity
-    guid: 51387c15cc9bf8740ac5183e586bfb5e
+    path: Assets/Scenes/SEWER LVL2.unity
+    guid: f77b28f31d01a4846ac2af09b94a71fa
   - enabled: 1
-    path: Assets/Scenes/VICTORY SCREEN.unity
-    guid: 8faa5959be0341d4d979265f66b528db
+    path: Assets/Scenes/VICTORY SCREEN 7.unity
+    guid: 9a51e916bdd487340a0f227f01c4b31e
+  - enabled: 1
+    path: Assets/Scenes/RURAL.unity
+    guid: 6687d03fe8d49b64b8d50917a20dbfee
+  - enabled: 1
+    path: Assets/Scenes/VICTORY SCREEN 5.unity
+    guid: 8b8ac512ff15aa64b894f02f75387ce8
+  - enabled: 1
+    path: Assets/Scenes/HOUSE MAIN.unity
+    guid: 437fbd86515b010478f472f3e6979e63
+  - enabled: 1
+    path: Assets/FINAL.unity
+    guid: 662b574337e654b4fba2071e0791f57e
+  - enabled: 1
+    path: Assets/Scenes/GAME OVER 1.unity
+    guid: 00d6f17c30b7dc54f9f59013a24d818d
+  - enabled: 1
+    path: Assets/Scenes/GAME OVER 2.unity
+    guid: d8cfeb9f7f565ac45a07f426feae1874
+  - enabled: 1
+    path: Assets/Scenes/GAME OVER 3.unity
+    guid: b101afeb2dbb08440b4be99a4b363a0a
+  - enabled: 1
+    path: Assets/Scenes/GAME OVER 4.unity
+    guid: c621cf8fd5e49b046a0240067555ada0
+  - enabled: 1
+    path: Assets/Scenes/GAME OVER 5.unity
+    guid: 5ecfba4b1f3a8284ba0960f5707555e0
+  - enabled: 1
+    path: Assets/Scenes/GAME OVER 6.unity
+    guid: de515f289f78d534f9cfd2eeb850b759
+  - enabled: 1
+    path: Assets/Scenes/GAME OVER 7.unity
+    guid: 42e95c147e301ad4fa9fb4915642a403
+  - enabled: 1
+    path: Assets/Scenes/GAME OVER 8.unity
+    guid: 388f545b430cbd74f87df96e24f12a4f
+  - enabled: 1
+    path: Assets/Scenes/GAME OVER 9.unity
+    guid: 57a498244f1c2f047a4f8b2d572c2897
+  - enabled: 1
+    path: Assets/Scenes/GAME OVER 10.unity
+    guid: 9d35a5ca256b5b14a9315a85c2f5d732
   m_configObjects: {}

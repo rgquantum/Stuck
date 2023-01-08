@@ -2,43 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class MapCoubnt : MonoBehaviour
 {   
 
-    public float mapC;
+    public static MapCoubnt instance;
+    public TextMeshProUGUI text;
+    int score;
+    public int next;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (instance == null)
+        {
+            instance = this;
+        }
+
+        next = SceneManager.GetActiveScene().buildIndex + 1;
     }
 
 
     void Update()
     {
-        if(mapC >= 15)
+        if(score >= 15)
        {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(next);
        }
     }
 
-    public void MapCounting()
+    public void ChangeScore(int mapValue)
     {
-       
+        score += mapValue;
+        text.text = "X" + score.ToString();
     }
 
-    private void OnTriggerEnter2D(Collider2D other) 
-    {
-        if(other.gameObject.tag == "Map")
-        {
-            Destroy(other.gameObject);
-            addMap();
-        }
-    }
 
-    public void addMap()
-    {
-        mapC =+1 ;
-    }
+
+   
 }
