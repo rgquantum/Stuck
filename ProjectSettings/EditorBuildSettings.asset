@@ -6,12 +6,33 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/GAME OVER.unity
-    guid: 51387c15cc9bf8740ac5183e586bfb5e
+    path: Assets/Scenes/MAINMENU.unity
+    guid: b58ef0addf91d764b8642a5c70560983
+  - enabled: 1
+    path: Assets/Scenes/LEVEL CHOICE.unity
+    guid: 560aea12a02686d428881fc0589344b4
   - enabled: 1
     path: Assets/Scenes/SCHOOL LVL1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/lvl 1 done.unity
-    guid: 0e805134d7cf631488eed1035dd298b8
+    path: Assets/Scenes/VICTORY SCREEN 1.unity
+    guid: 78ad3c385835777418edda398dbbc9b1
+  - enabled: 1
+    path: Assets/Scenes/SCHOOL LVL2.unity
+    guid: 267c6948438b32848ab33bacf5bbbc63
+  - enabled: 1
+    path: Assets/Scenes/VICTORY SCREEN 2.unity
+    guid: 1e3ae4215deb7e9449e00d7b06fdc3c9
+  - enabled: 1
+    path: Assets/Scenes/Urban 2.unity
+    guid: e3502a507fe4fa54187005c43cf575be
+  - enabled: 1
+    path: Assets/Scenes/VICTORY SCREEN 3.unity
+    guid: 7cb309af8647f6e4ba1e6f3b343f1af4
+  - enabled: 1
+    path: Assets/Scenes/GAME OVER.unity
+    guid: 51387c15cc9bf8740ac5183e586bfb5e
+  - enabled: 1
+    path: Assets/Scenes/VICTORY SCREEN.unity
+    guid: 8faa5959be0341d4d979265f66b528db
   m_configObjects: {}

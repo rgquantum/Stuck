@@ -6,18 +6,23 @@ using UnityEngine.SceneManagement;
 public class Level1Done : MonoBehaviour
 {
    
-    public CharacterController2D controller;
+     public int next;
 
 
     void Start()
     {
-        
+        next = SceneManager.GetActiveScene().buildIndex + 1;
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void nextLevel()
+    {
+        SceneManager.LoadScene(next);
     }
 
 
