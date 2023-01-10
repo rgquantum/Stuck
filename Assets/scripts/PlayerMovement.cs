@@ -145,19 +145,19 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("hit!");
         }
 
-        if(other.gameObject.tag == "Spike")
+        if(other.gameObject.tag == "Spike2")
         {
             Dead2();
             Debug.Log("hit!");
         }
 
-        if(other.gameObject.tag == "Spike")
+        if(other.gameObject.tag == "Spike3")
         {
             Dead3();
             Debug.Log("hit!");
         }
 
-        if(other.gameObject.tag == "Spike")
+        if(other.gameObject.tag == "Spike4")
         {
             Dead4();
             Debug.Log("hit!");
@@ -169,7 +169,7 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("hit!");
         }
 
-        if(other.gameObject.tag == "Spike")
+        if(other.gameObject.tag == "Spike6")
         {
             Dead6();
             Debug.Log("hit!");

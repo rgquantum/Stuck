@@ -1250,7 +1250,7 @@ GameObject:
   - component: {fileID: 501968602}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Spike
+  m_TagString: Spike3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
