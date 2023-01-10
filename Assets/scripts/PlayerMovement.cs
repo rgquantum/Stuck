@@ -64,45 +64,41 @@ public class PlayerMovement : MonoBehaviour
 	{
 		if(collision.gameObject.tag == "Spike")
         {
-            Dead();
+            Dead1();
 			Debug.Log("hit!");
         }
 
         if(collision.gameObject.tag == "Spike1")
         {
-            Dead();
+            Dead2();
 			Debug.Log("hit!");
         }
 
         if(collision.gameObject.tag == "Spike2")
         {
-            Dead();
+            Dead3();
 			Debug.Log("hit!");
         }
 
         if(collision.gameObject.tag == "Spike3")
         {
-            Dead();
+            Dead4();
 			Debug.Log("hit!");
         }
 
         if(collision.gameObject.tag == "Spike4")
         {
-            Dead();
+            Dead5();
 			Debug.Log("hit!");
         }
 
         if(collision.gameObject.tag == "Spike5")
         {
-            Dead();
+            Dead6();
 			Debug.Log("hit!");
         }
 
-        if(collision.gameObject.tag == "Spike6")
-        {
-            Dead();
-			Debug.Log("hit!");
-        }
+        
 
 		if(collision.gameObject.name == "JumpDown")
         {
@@ -145,24 +141,111 @@ public class PlayerMovement : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other) {
         if(other.gameObject.tag == "Spike")
         {
-            Dead();
+            Dead1();
+            Debug.Log("hit!");
+        }
+
+        if(other.gameObject.tag == "Spike")
+        {
+            Dead2();
+            Debug.Log("hit!");
+        }
+
+        if(other.gameObject.tag == "Spike")
+        {
+            Dead3();
+            Debug.Log("hit!");
+        }
+
+        if(other.gameObject.tag == "Spike")
+        {
+            Dead4();
+            Debug.Log("hit!");
+        }
+
+        if(other.gameObject.tag == "Spike5")
+        {
+            Dead5();
+            Debug.Log("hit!");
+        }
+
+        if(other.gameObject.tag == "Spike")
+        {
+            Dead6();
             Debug.Log("hit!");
         }
 
        
     }
 
-    public void Dead()
+    public void Dead1()
 	{
 		animator.SetBool("IsDead", true);
-        deadCountdown();
+        deadCountdown1();
+	}
+
+    public void Dead2()
+	{
+		animator.SetBool("IsDead", true);
+        deadCountdown2();
+	}
+
+    public void Dead3()
+	{
+		animator.SetBool("IsDead", true);
+        deadCountdown3();
+	}
+
+    public void Dead4()
+	{
+		animator.SetBool("IsDead", true);
+        deadCountdown4();
+	}
+
+    public void Dead5()
+	{
+		animator.SetBool("IsDead", true);
+        deadCountdown5();
+	}
+
+    public void Dead6()
+	{
+		animator.SetBool("IsDead", true);
+        deadCountdown6();
 	}
 
 
-    void deadCountdown()
+    void deadCountdown1()
     {
-        StartCoroutine(deadScene());
+        StartCoroutine(deadScene1());
     }
+
+    void deadCountdown2()
+    {
+        StartCoroutine(deadScene2());
+    }
+
+    void deadCountdown3()
+    {
+        StartCoroutine(deadScene3());
+    }
+
+    void deadCountdown4()
+    {
+        StartCoroutine(deadScene4());
+    }
+
+    void deadCountdown5()
+    {
+        StartCoroutine(deadScene5());
+    }
+
+    void deadCountdown6()
+    {
+        StartCoroutine(deadScene6());
+    }
+
+
 
     void victoryCountdown()
     {
@@ -171,7 +254,37 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-    IEnumerator deadScene()
+    IEnumerator deadScene1()
+    {
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(16);
+    }
+
+    IEnumerator deadScene2()
+    {
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(17);
+    }
+
+    IEnumerator deadScene3()
+    {
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(18);
+    }
+
+    IEnumerator deadScene4()
+    {
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(19);
+    }
+
+    IEnumerator deadScene5()
+    {
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(20);
+    }
+
+    IEnumerator deadScene6()
     {
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(0);

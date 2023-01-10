@@ -757,6 +757,7 @@ GameObject:
   - component: {fileID: 2002808312}
   - component: {fileID: 2002808311}
   - component: {fileID: 2002808314}
+  - component: {fileID: 2002808315}
   m_Layer: 0
   m_Name: rwe
   m_TagString: Untagged
@@ -829,13 +830,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2002808309}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 2002808315}
+        m_TargetAssemblyTypeName: Level1Done, Assembly-CSharp
+        m_MethodName: nextLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -891,6 +892,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8986735d79e4684ba09db2a89192622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2002808315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002808309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa24d894c61abf94ab4218b208118349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  next: 0
 --- !u!1 &2130251459
 GameObject:
   m_ObjectHideFlags: 0
