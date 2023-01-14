@@ -68,33 +68,33 @@ public class PlayerMovement : MonoBehaviour
 			Debug.Log("hit!");
         }
 
-        if(collision.gameObject.tag == "Spike1")
+        if(collision.gameObject.tag == "Spike2")
         {
             Dead2();
 			Debug.Log("hit!");
         }
 
-        if(collision.gameObject.tag == "Spike2")
+        if(collision.gameObject.tag == "Spike3")
         {
             Dead3();
 			Debug.Log("hit!");
         }
 
-        if(collision.gameObject.tag == "Spike3")
+        if(collision.gameObject.tag == "Spike4")
         {
             Dead4();
 			Debug.Log("hit!");
         }
 
-        if(collision.gameObject.tag == "Spike4")
+        if(collision.gameObject.tag == "Spike5")
         {
             Dead5();
 			Debug.Log("hit!");
         }
 
-        if(collision.gameObject.tag == "Spike5")
+        if(collision.gameObject.tag == "Spike6")
         {
-            Dead6();
+            Dead5();
 			Debug.Log("hit!");
         }
 
