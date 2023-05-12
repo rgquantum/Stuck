@@ -35,7 +35,7 @@ public class MapCoubnt : MonoBehaviour
     public void ChangeScore(int mapValue)
     {
         score += mapValue;
-        text.text = "X" + score.ToString();
+        text.text = "Map x" + score.ToString();
     }
 
 

@@ -19,7 +19,7 @@ public class levelChoice : MonoBehaviour
 
     public void Level1()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(2);
     }
 
     public void Level2()
@@ -63,5 +63,10 @@ public class levelChoice : MonoBehaviour
     public void credit()
     {
         SceneManager.LoadScene(15);
+    }
+
+    public void settings()
+    {
+        SceneManager.LoadScene(16);
     }
 }
